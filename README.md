@@ -4,7 +4,7 @@
 run the follow commands:  
       `apt install ansible`  
       `ssh-agent bash`  
-      `ssh-add PUBLIC_KEY`  
+      `ssh-add PUBLIC_KEY_FILE`  
   
 
 ## how to use
