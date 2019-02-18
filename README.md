@@ -1,5 +1,5 @@
 # ossim-scripts
 
 
-# how to use
+## how to use
   `ansible-playbook initScript.yml`
