@@ -1,0 +1,4 @@
+- hosts: ossims
+  roles:
+    - general
+    - ossec

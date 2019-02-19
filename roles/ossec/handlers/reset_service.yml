@@ -1,0 +1,4 @@
+- name: restart ossim service
+  service:
+    name: ossim-agent
+    state: restarted

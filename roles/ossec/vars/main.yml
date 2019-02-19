@@ -1,0 +1,14 @@
+files:
+  - name: ossec-single-line.cfg.local
+    src: files/ossec-single-line.cfg.local
+    dest: /etc/ossim/agent/plugins/ossec-single-line.cfg.local
+    owner: root
+    groups: root
+    mode: 0644
+
+  - name: local_rules.xml
+    src: files/local_rules.xml
+    dest: /var/ossec/alienvault/rules/local_rules.xml
+    owner: root
+    groups: ossec
+    mode: 0644

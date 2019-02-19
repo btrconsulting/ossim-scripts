@@ -1,0 +1,16 @@
+- name: copying ossec config file
+  copy:
+    src: files/ossec-single-line.cfg.local
+    dest: /etc/ossim/agent/plugins/ossec-single-line.cfg.local
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart ossim service
+
+- name: copying local rules
+  copy:
+    src: files/local_rules.xml
+    dest: /var/ossec/alienvault/rules/local_rules.xml
+    owner: root
+    group: ossec
+    mode: 0644
