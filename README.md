@@ -2,7 +2,9 @@
 
 ## how to install
 run the follow commands:  
-      `apt install ansible`  
+      `sudo apt-add-repository -y ppa:ansible/ansible
+       sudo apt-get update
+       sudo apt-get install -y ansible`  
       `ssh-agent bash`  
       `ssh-add PUBLIC_KEY_FILE`  
   
