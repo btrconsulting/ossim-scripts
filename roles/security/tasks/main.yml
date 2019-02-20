@@ -1,0 +1,15 @@
+- name: adding user ansible with lower privilages in sudoers
+  user:
+   name: ansible
+   state: present
+   generate_ssh_key: True
+   groups:
+     - sudo
+     - ossec
+   password: $6$Pot2XkhW$DLKrnBQj3284W2BgPwvW/RWAtZ79bH3L0zAINkYEoZk5iuS9ev/o5cNsjm7PuWlas4aRf7lK91jMfvWE626uu/
+
+- name: add authorized key
+  copy:
+    src: /root/.ssh/authorized_keys
+    dest: /home/ansible/.ssh/authorized_keys
+    remote_src: yes
