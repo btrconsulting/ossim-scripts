@@ -1,1 +1,9 @@
+[ossims]
+interno ansible_host=172.27.0.95
+manila ansible_host=172.27.244.18
+osdepym ansible_host=172.27.244.6
+korea ansible_host=172.27.244.10
+dubai ansible_host=172.27.244.14
 
+[test]
+interno ansible_host=172.27.0.95

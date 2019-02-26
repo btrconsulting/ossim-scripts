@@ -9,10 +9,9 @@
 
 - name: copying local rules
   copy:
-    become_method: sudo
-    become: yes
     src: files/local_rules.xml
     dest: /var/ossec/alienvault/rules/local_rules.xml
     owner: root
     group: ossec
     mode: 0644
+  notify: restart ossec service
