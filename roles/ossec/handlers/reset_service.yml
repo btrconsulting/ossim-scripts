@@ -2,3 +2,8 @@
   service:
     name: ossim-agent
     state: restarted
+
+- name: restart ossec service
+  service:
+    name: ossec
+    state: restarted
