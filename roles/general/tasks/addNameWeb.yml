@@ -1,0 +1,13 @@
+- name: add the name of the location to the header of web
+  lineinfile:
+    path: /usr/share/ossim/www/home/index.php
+    state: present
+    insertafter: 'ossim_contrast_logo.*$'
+    line: '{{inventory_hostname}}'
+
+- name: add the name of the location to the login page
+  lineinfile:
+    path: /usr/share/ossim/www/session/login.php
+    state: present
+    regexp: '.*\. \$system_ip.*'
+    line: "echo $system_name . ' {{inventory_hostname}} (' . $system_ip . ')';"
