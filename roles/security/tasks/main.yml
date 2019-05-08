@@ -13,3 +13,8 @@
     src: /root/.ssh/authorized_keys
     dest: /home/ansible/.ssh/authorized_keys
     remote_src: yes
+
+
+- name: install fail2ban
+  apt:
+    name: fail2ban

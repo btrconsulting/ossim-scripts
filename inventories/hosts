@@ -7,6 +7,12 @@ korea ansible_host=172.27.244.53
 thailandia ansible_host=172.27.244.54
 osdepym ansible_host=172.27.244.55
 
+[ossims-dotw]
+rumania ansible_host=172.27.244.50
+manila ansible_host=172.27.244.51
+dubai ansible_host=172.27.244.52
+korea ansible_host=172.27.244.53
+thailandia ansible_host=172.27.244.54
 
 
 [test]
